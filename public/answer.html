@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/korea.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선배-후배 매칭프로그램</title>
+</head>
+
+
+<body id="chat-screen">
+   
+    <header class="alt-header" id="bs-name">
+        <div class="alt-header__column"><h1 class="alt-header__title">선배</h1></div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen main-chat" style="margin-top:100px">
+        <div class="chat__timestamp">
+            2022년 5월 5일 목요일
+        </div>
+
+        <div class="message-row">
+            <img src="tiger.JPG">
+            <div class="message-row__content">
+                <span class="message__author">후배님</span>
+                <div class="message__info">
+                    <span class="message__bubble">슨배릠 안녕하세여</span>
+                  </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message-row__content">                
+                <div class="message__info">
+                    <span class="message__bubble">후배릠 안녕하세여</span>
+                </div>
+            </div>
+        </div>     
+
+        <div class="message-row">
+            <img src="tiger.JPG">
+            <div class="message-row__content">
+                <span class="message__author">후배님</span>
+                <div class="message__info">
+                    <span class="message__bubble">이름이 무엇인가요?</span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <form class="bs-reply">
+            <input type="text" placeholder="후배를 위해 성실히 답변해주세요!"/>
+            <button>
+            전송
+            </button>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a9eb1f10be.js" crossorigin="anonymous"></script>
+    <script src="./answer.js"></script>
+</body>
+</html>
+
+
+
