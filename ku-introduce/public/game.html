@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/result.css">
+        <link rel="stylesheet" href="css/korea.css">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>선배-후배 매칭프로그램</title>
+    </head>    
+    
+    
+    <body id="chat-screen">
+        
+        <div class="black-bg success">
+            <div class="white-bg">
+                <h1 class="header">와!!!</h1>
+                <div class="score"></div>
+                <div class="img-box"><img src="pass3.png" alt=""></div>
+                <div class="youKnow">정범순 선배님을 잘 알고/모르고 있군요?</div>
+                <div class="gift">정범순 선배가 보답으로 FM을 해줄거에요!</div>
+                <button class="capture-button">캡쳐하고 공유</button>
+
+            </div>
+        </div>
+
+        <div class="black-bg fail">
+            <div class="white-bg">
+                <h1 class="header">실패..ㅠㅠ</h1>
+                <div class="score"></div>
+                <div class="img-box"><img src="fail1.png" alt=""></div>
+                <div class="youKnow">선배의 이름을 모르다니..대실망..</div>
+                <div class="gift">영원히 이 선배랑은 빠이...ㅠㅠ</div>
+
+            </div>
+        </div>
+
+
+    
+    
+
+
+
+
+    <header class="alt-header">
+        <div class="alt-header__column"><h1 class="alt-header__title">선배</h1></div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen main-chat" style="margin-top:100px">
+        <div class="chat__timestamp">
+            2022년 5월 5일 목요일
+        </div>
+        
+
+        <div class="message-row">
+            <img src="tiger.JPG">
+            <div class="message-row__content">
+                <span class="message__author">선배님</span>
+                <div class="message__info">
+                    <span class="message__bubble">후배야 안녕?</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message-row__content">                
+                <div class="message__info">
+                    <span class="message__bubble">선배님 안녕하십니까</span>
+                </div>
+            </div>
+        </div>     
+
+        <div class="message-row">
+            <img src="tiger.JPG">
+            <div class="message-row__content">
+                <span class="message__author">선배님</span>
+                <div class="message__info">
+                    <span class="message__bubble">내가 누군지 알 것 같으면 내 이름 석 자를 정확히 적도록 하여라. 알겠느냐?</span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <form class="bs-reply">
+        <input type="text" placeholder="선배님의 이름을 적어주세요! 모르겠다면 enter!"/>
+        <button>
+        전송
+        </button>
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/a9eb1f10be.js" crossorigin="anonymous"></script>
+    <script src="game.js"></script>
+</body>
+</html>
+
+
+

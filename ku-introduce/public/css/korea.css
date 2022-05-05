@@ -1,0 +1,60 @@
+#chat-screen .alt-header{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    background:#f55b82;
+    color: white;
+}
+#chat-screen {
+    height: 250vh;
+    background: #f55b82;
+}
+.alt-header__title{
+    font-size: 35px;
+}
+.chat__timestamp{
+    background-color: #f55b82;
+}
+.message__author{
+    color: white;
+    font-size: 17px;
+}
+.message-row--own .message__bubble{
+    background-color:#8F8989;
+    color:whitesmoke;
+}
+body{
+    margin : 0;
+    font-family: 'Gowun Dodum', sans-serif;
+
+}
+.bs-reply{
+    height: 10vh;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 10px;
+        align-items: flex-start;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+}
+.bs-reply input{
+    font-family: 'Gowun Dodum', sans-serif;
+    width: 100%;
+    padding: 10px 5px 30px 5px;
+    border: 0px;
+    transition: none;
+    font-size: 20px;
+    text-align: left;
+}
+.bs-reply button {
+    font-family: 'Gowun Dodum', sans-serif;
+    margin-top: 10px;
+    width: 70px;
+    height: 35px;
+    background:#FAE100;
+    border: 0;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>시작하기</title>
+</head>
+<body>
+  <div class="box">
+    <img src="./호랭이.svg">
+    <h1>내가 누군지 아니?</h1>
+    <h3>고대를 알고싶으면 퀴즈를 통해 선배님을 맞춰보아요!! 게임을 시작해볼까요?</h3>
+    
+    <button class="start" onclick="location.href='choice.html'">게임 시작하기!</button>
+    <div class="detail">아직 지원자가 없다면 스토리에 링크를 공유하고 선배님들의 지원을 기다려봅시다!</div>
+    <button id="copybtn" onclick="copyToClipboard('https://introduce-ku-1a16c.web.app/answer.html');" title="주소 복사">클릭해서 선배님 질문링크 공유</button>
+  </div>
+  
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+</body>
+
+</html>
+<script src="start.js"></script>
